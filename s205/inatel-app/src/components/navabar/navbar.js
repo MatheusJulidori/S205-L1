@@ -1,29 +1,31 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faBook, faHome, faUsers, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
 function Navbar() {
     return (
         <nav className="bottom-nav-bar sticky">
-            <div className="nav-icon">
+            <Link to="/acs" className="nav-icon">
                 <FontAwesomeIcon icon={faTasks} />
                 <p>ACs</p>
-            </div>
-            <div className="nav-icon">
+            </Link>
+            <Link to="/disciplinas" className="nav-icon">
                 <FontAwesomeIcon icon={faBook} />
                 <p>Disciplinas</p>
-            </div>
-            <div className="nav-icon-central">
+            </Link>
+            <Link to="/" className="nav-icon-central">
                 <FontAwesomeIcon icon={faHome} />
-            </div>
-            <div className="nav-icon">
+            </Link>
+            <Link to="/professores" className="nav-icon">
                 <FontAwesomeIcon icon={faUsers} />
                 <p>Professores</p>
-            </div>
-            <div className="nav-icon">
+            </Link>
+            <Link to="/sair" className="nav-icon">
                 <FontAwesomeIcon icon={faSignOutAlt} />
                 <p>Sair</p>
-            </div>
+            </Link>
         </nav>
     );
 }

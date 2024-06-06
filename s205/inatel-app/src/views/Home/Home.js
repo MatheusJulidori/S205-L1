@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from './Header';
-import Table from './Table';
+import Header from '../../components/header/header';
+import Table from '../../components/table/table';
+import './Home.css';
 
-function MainContent() {
+function Home() {
     const aulasHojeData = [
         ["C214-A", "19h30", "I-15"],
         ["S205", "19h30", "VI-1.3"]
@@ -28,4 +29,4 @@ function MainContent() {
     );
 }
 
-export default MainContent;
+export default Home;

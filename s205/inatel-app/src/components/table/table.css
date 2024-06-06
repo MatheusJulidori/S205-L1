@@ -1,0 +1,43 @@
+/* Table Styles */
+.table-section {
+    margin-top: 2rem;
+  }
+  
+  .table-container {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0px solid transparent;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: default;
+    border-radius: 10px;
+  }
+  
+  .table-container th, td {
+    border: 1px solid var(--border-color);
+    padding: .5rem;
+    width: 33.33%;
+  }
+  
+  .table-container th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .table-container td {
+    text-align: center;
+  }
+  
+  .table-container tr:nth-child(even) {
+    background-color: var(--table-row-even-color);
+  }
+  
+  .table-container tr:hover {
+    background-color: var(--table-row-hover-color);
+  }
+  
