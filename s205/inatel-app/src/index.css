@@ -1,6 +1,10 @@
 /* Color Palette */
 :root {
   --primary-color: #2D9BF0;
+  --md-sys-color-primary: #2D9BF0;
+  --md-sys-color-on-primary: #E6F4F1;
+  --md-sys-color-primary-container: #EFFAFF;
+  --md-sys-color-on-primary-container: #7393BC;
   --secondary-color: #EFFAFF;
   --background-color: #E6F4F1; 
   --table-row-hover-color: #7393BC;

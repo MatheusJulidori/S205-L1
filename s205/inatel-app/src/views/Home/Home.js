@@ -25,6 +25,7 @@ function Home() {
             <Table title="Aulas de hoje" columns={["Disciplina", "Horário", "Sala"]} data={aulasHojeData} />
             <Table title="Frequência" columns={["Disciplina", "Faltas", "Limite"]} data={frequenciaData} />
             <Table title="Notas" columns={["Disciplina", "NP1", "NP2"]} data={notasData} />
+            <div style={{ margin: 20, color: 'transparent' }}>.</div>
         </main>
     );
 }
