@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../components/header/header';
 import Table from '../../components/table/table';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 
 function Home() {
@@ -22,6 +24,19 @@ function Home() {
     return (
         <main className="main-content">
             <Header />
+            <div className="prox-aula" style={{ marginTop: 20 }}>
+                <h3> <FontAwesomeIcon icon={faBell} />  Avisos</h3>
+                <div className="card-aula">
+                    <div className="aula-info">
+                        <p>S205 | Aulas de laboratório serão assíncronas à partir do dia 20/05</p>
+                        <p></p>
+                    </div>
+                    <div className="aula-info">
+                    <p>S107 | A entrega do trabalho validará a Pv2</p>
+                    <p></p>
+                    </div>
+                </div>
+            </div>
             <Table title="Aulas de hoje" columns={["Disciplina", "Horário", "Sala"]} data={aulasHojeData} />
             <Table title="Frequência" columns={["Disciplina", "Faltas", "Limite"]} data={frequenciaData} />
             <Table title="Notas" columns={["Disciplina", "NP1", "NP2"]} data={notasData} />

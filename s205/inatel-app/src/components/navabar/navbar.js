@@ -7,9 +7,9 @@ import './navbar.css';
 function Navbar() {
     return (
         <nav className="bottom-nav-bar sticky">
-            <Link to="/acs" className="nav-icon">
+            <Link to="/vagas" className="nav-icon">
                 <FontAwesomeIcon icon={faTasks} />
-                <p>ACs</p>
+                <p>Vagas</p>
             </Link>
             <Link to="/disciplinas" className="nav-icon">
                 <FontAwesomeIcon icon={faBook} />

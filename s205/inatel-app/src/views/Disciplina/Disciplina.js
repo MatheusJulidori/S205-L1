@@ -11,8 +11,14 @@ function Disciplina() {
         ["C214", "8/10", "85", "-"],
         ["S107", "12/20", "84" , "-"],
         ["S205", "5/30", "72", "-"],
-        ["C216", "0/30", "70","-"],
         ["G008", "12/15", "80","-"],
+    ];
+
+    const provas = [
+        ["C214", "12/04 - Sexta", "21h30", "PV1"],
+        ["S107", "10/04 - Quarta", "19h30" , "PV1"],
+        ["S205", "17/04 - Quarta", "21h30", "PV1"],
+        ["G008", "22/04 - Segunda", "21:30","PV1"],
     ];
 
     const professors = [
@@ -33,6 +39,7 @@ function Disciplina() {
         <main className="main-content">
             <Header />
             <Table title="Disciplinas" columns={["Código Disc.", "Frequencia", "NP1", "NP2"]} data={Disciplinas} />
+            <Table title="Provas" columns={["Disciplina", "Data", "Horário", "Prova"]} data={provas} />
             <div id="componentes" style={{display:'flex', justifyContent:"center", marginTop:'10px'}}>
                 <md-filled-button onClick={handleOpenDialog} className="btn btn-primary" style={{ padding: '10px 20px' }}>Professores</md-filled-button>
                 
